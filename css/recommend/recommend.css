@@ -1,0 +1,48 @@
+.r_nr .container {
+    width: 70%;
+    border-radius: 10px;
+}
+
+.r_nr .container .row .col {
+    padding: 5px;
+}
+
+/* 设置卡片圆角 */
+.r_nr .card {
+    border-radius: 10px;
+}
+.r_nr .card:hover{
+    box-shadow: 1px 1px 5px #888888;
+}
+.r_nr .card a{
+    color: #212529;
+    text-decoration: none;
+}
+/* 设置图片样式 */
+.r_nr .card img {
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+    height: 150px;
+    background-position: 0px 0px;
+    object-fit: cover;
+}
+
+/* 设置文字卡片高度 */
+.r_nr .card .card-body {
+    height: 120px;
+}
+
+/* 设置语言栏未知 */
+.r_nr .card .card-body span {
+    position: absolute;
+    bottom: 10px;
+}
+
+.r_nr .paging .page-link {
+    color: black;
+}
+
+.r_nr .paging .page-item:active {
+    color: red;
+    box-shadow: 0;
+}
