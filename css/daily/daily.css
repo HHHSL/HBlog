@@ -1,0 +1,10 @@
+.daily .container{
+    width: 70%;
+}
+.daily .daily_nr .card{
+    margin-top: 18px;
+}
+.daily .daily_nr .card img{
+    width: 200px;
+    padding: 3px 0px;
+}
