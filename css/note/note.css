@@ -1,0 +1,24 @@
+.node .labels{
+    margin: 20px;
+}
+.node .labels a{
+    margin: 5px;
+}
+.node_nr {
+    width: 90%;
+}
+.node_nr .card{
+    border-radius: 15px;
+}
+.node_nr .card img{
+    border-top-right-radius: 15px;
+    border-top-left-radius: 15px;
+    height: 200px;
+    object-fit: cover;
+}
+.node_nr .row .col{
+    padding: 5px;
+}
+.node .container .paging .page-link{
+    color: black;
+}
