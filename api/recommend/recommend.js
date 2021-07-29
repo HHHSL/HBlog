@@ -1,3 +1,3 @@
-function getarticle(){
-    $.get(getUrl()+"api/recommend/getarticle")
+function getarticle(data){
+    
 }

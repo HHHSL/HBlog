@@ -1,4 +1,4 @@
-function getUrl() {
+function getUrl() {//获取发送给后台的地址
     var result = ''
     $.ajax({
         url : 'api/address.json',

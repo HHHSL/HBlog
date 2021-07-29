@@ -1,6 +1,6 @@
 $(function () {
     for(var i = 1;i <= 6; i++ ){
-        var code =  "<div class='col'>"+
+        var code =  "<div class='col animate__animated animate__flipInY'>"+
                     "<div class='card'>"+
                     "<a href='#'>"+
                     "<img src='img/hhhsl.jpg' class='card-img-top'>"+
@@ -11,5 +11,5 @@ $(function () {
                     "</div></a></div></div>"
         $(".r_nr .container .row").append(code)
     }
-    getarticle();
+    console.log("getUrl()"+getUrl())        
 });
