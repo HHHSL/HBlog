@@ -34,7 +34,7 @@ $(function(){
       $("#finput").css("border-color","rgb(118, 118, 118)");
       $("#finput").css("box-shadow","0 0 0 0.1rem rgb(118, 118, 118)");
     });
-    // 导航栏输入框失去焦点
+    // 导航栏输入框失去焦点时触发
     $("#finput").blur(function(){
       $("#finput").css("border-color","black");
       $("#finput").css("box-shadow","0 0 0 0 rgba(0,0,0,.3)");
