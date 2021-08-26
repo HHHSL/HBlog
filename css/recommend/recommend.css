@@ -1,5 +1,88 @@
+@media (max-width: 576px) { 
+    .r_nr .container{
+        width: 85%;
+    }
+    /* 内容字体大小 */
+    .r_nr .card .card-body .card-title{
+        font-size: 20px;
+    }
+    .r_nr .card .card-body .card-text{
+        font-size: 14px;
+    }
+    /* 设置语言栏未知 */
+    .r_nr .card .card-body span {
+        bottom: 4%;
+    }
+
+}
+@media (min-width: 576px) and (max-width: 768px) { 
+    /* 内容字体大小 */
+    .r_nr .card .card-body .card-title{
+        font-size: 16px;
+    }
+    .r_nr .card .card-body .card-text{
+        font-size: 12px;
+    }
+    /* 设置语言栏未知 */
+    .r_nr .card .card-body span {
+        bottom: 4%;
+    }
+    .r_nr .container {
+        width: 70%;
+    }
+}
+@media (min-width: 768px) and (max-width: 992px) { 
+    /* 内容字体大小 */
+    .r_nr .card .card-body .card-title{
+        font-size: 18px;
+    }
+    .r_nr .card .card-body .card-text{
+        font-size: 14px;
+    }
+    /* 设置语言栏未知 */
+    .r_nr .card .card-body span {
+        bottom: 4%;
+    }
+    .r_nr .container {
+        width: 70%;
+    }
+}
+@media (min-width: 992px) and (max-width: 1200px) { 
+    /* 内容字体大小 */
+    .r_nr .card .card-body .card-title{
+        font-size: 20px;
+    }
+    .r_nr .card .card-body .card-text{
+        font-size: 15px;
+    }
+    /* 设置语言栏未知 */
+    .r_nr .card .card-body span {
+        bottom: 2%;
+    }
+    .r_nr .container {
+        width: 70%;
+    }
+}
+@media (min-width: 1200px) and (max-width: 1400px) { 
+    /* 设置语言栏未知 */
+    .r_nr .card .card-body span {
+        bottom: 2%;
+    }
+    .r_nr .container {
+        width: 70%;
+    }
+}
+
+@media (min-width: 1400px) { 
+    /* 设置语言栏未知 */
+    .r_nr .card .card-body span {
+        bottom: 5%;
+    }
+    .r_nr .container {
+        width: 70%;
+    }
+}
 .r_nr .container {
-    width: 70%;
     border-radius: 10px;
 }
 
@@ -35,7 +118,6 @@
 /* 设置语言栏未知 */
 .r_nr .card .card-body span {
     position: absolute;
-    bottom: 10px;
 }
 
 .r_nr .paging .page-link {
