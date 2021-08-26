@@ -1,3 +1,4 @@
+document.write("<script language=javascript src='../../api/recommend/recommend.js'></script>");
 $(function () {
     for(var i = 1;i <= 6; i++ ){
         var code =  "<div class='col animate__animated animate__flipInY'>"+
@@ -11,5 +12,5 @@ $(function () {
                     "</div></a></div></div>"
         $(".r_nr .container .row").append(code)
     }
-    console.log("getUrl()"+getUrl())        
+    a()
 });

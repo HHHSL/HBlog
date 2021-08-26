@@ -1,17 +1,311 @@
-.home1,
-.home2 {
-    color: rgba(0, 0, 0, .55);
-    /* 垂直左右居中 */
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
+@media (max-width: 576px) { 
+   /* 首页1区左侧图 */
+   .home1 .home_lp {
+    width: 40%;
+    top: 15%;
+    left: -10%;
+}
+/* 首页1区右侧图 */
+.home1 .home_rp {
+    width: 40%;
+    top: 65%;
+    right: 2%;
+}
+    /* 首页2区右侧图 */
+    .home2 img {
+        height: 30%;
+    }
+    .home2 h1 {
+        font-size: 30px;
+        font-family: Serif;
+    }
+        /* 首页3区左侧 */
+.home3 .sy_l {
+    width: 85%;
+    top: 50%;
+    left: 50%;
 }
 
+/* 首页3区图片 */
+.home3 img {
+    right: 10%;
+    top: 13%;
+    transform: translate(0%, -50%);
+    width: 80%;
+}
+.home3 h2,.home3 span,.home4 h2{
+    font-size: 30px;
+}
+/* 首页4区图片 */
+.home4 img{
+    top: 20%;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -80%);
+    width: 80%;
+}
+/* 首页4区右侧 */
+.home4 .sy_r{
+    width: 80%;
+    border: 2px dashed rgba(0, 0, 0, .55);
+    position: absolute;
+    top: 80%;
+    left: 50%;
+    transform: translate(-50%, -80%);
+    border-radius: 10px;
+    padding: 10px;
+}
+}
+
+@media (min-width: 576px) and (max-width: 768px) { 
+   /* 首页1区左侧图 */
+   .home1 .home_lp {
+    width: 40%;
+    top: 20%;
+    left: -10%;
+}
+/* 首页1区右侧图 */
+.home1 .home_rp {
+    width: 40%;
+    top: 60%;
+    right: -5%;
+
+}
+    /* 首页2区右侧图 */
+    .home2 img {
+        height: 35%;
+    }
+    .home2 h1 {
+        font-size: 40px;
+        font-family: Serif;
+    }
+    /* 首页3区左侧 */
+.home3 .sy_l {
+    top: 50%;
+    left: 25%;
+    transform: translate(0%, -50%);
+}
+
+/* 首页3区图片 */
+.home3 img {
+    top: 50%;
+    right: 30%;
+    top: 50%;
+    transform: translate(0%, -50%);
+    width: 100%;
+}
+.home3 h2,.home3 span,.home4 h2{
+    font-size: 35px;
+}
+/* 首页4区图片 */
+.home4 img{
+    top: 50%;
+    left: -50%;
+    top: 50%;
+    transform: translate(0%, -50%);
+    width: 100%;
+}
+/* 首页4区右侧 */
+.home4 .sy_r{
+    width: 60%;
+    border: 2px dashed rgba(0, 0, 0, .55);
+    position: absolute;
+    top: 50%;
+    left: 75%;
+    transform: translate(-50%, -50%);
+    border-radius: 10px;
+    padding: 10px;
+}
+ }
+
+@media (min-width: 768px) and (max-width: 992px) { 
+   /* 首页1区左侧图 */
+   .home1 .home_lp {
+        width: 25%;
+        top: 35%;
+        left: 10%;
+    }
+    /* 首页1区右侧图 */
+    .home1 .home_rp {
+        width: 25%;
+        top: 45%;
+        right: 10%;
+    }
+    /* 首页2区右侧图 */
+.home2 img {
+    height: 50%;
+}
+.home2 h1 {
+    font-size: 50px;
+    font-family: Serif;
+}
+/* 首页3区左侧 */
+.home3 .sy_l {
+    top: 50%;
+    left: 30%;
+    transform: translate(-45%, -50%);
+}
+
+/* 首页3区图片 */
+.home3 img {
+    top: 50%;
+    right: -5%;
+    top: 50%;
+    transform: translate(0%, -50%);
+    width: 45%;
+}
+.home3 h2,.home3 span,.home4 h2{
+    font-size: 36px;
+}
+/* 首页4区图片 */
+.home4 img{
+    top: 50%;
+    left: -10%;
+    top: 50%;
+    transform: translate(0%, -50%);
+    width: 70%;
+}
+/* 首页4区右侧 */
+.home4 .sy_r{
+    width: 40%;
+    border: 2px dashed rgba(0, 0, 0, .55);
+    position: absolute;
+    top: 50%;
+    left: 75%;
+    transform: translate(-50%, -50%);
+    border-radius: 10px;
+    padding: 10px;
+}
+ }
+
+@media (min-width: 992px) and (max-width: 1200px) { 
+   /* 首页1区左侧图 */
+   .home1 .home_lp {
+    width: 25%;
+    top: 35%;
+    left: 10%;
+}
+
+/* 首页1区右侧图 */
+.home1 .home_rp {
+    width: 25%;
+    top: 45%;
+    right: 10%;
+} 
+/* 首页2区右侧图 */
+.home2 img {
+    height: 60%;
+}
+.home2 h1 {
+    font-size: 68px;
+    font-family: Serif;
+}
+/* 首页3区左侧 */
+.home3 .sy_l {
+    top: 50%;
+    left: 25%;
+    transform: translate(-55%, -50%);
+}
+
+/* 首页3区图片 */
+.home3 img {
+    top: 50%;
+    right: 0%;
+    top: 50%;
+    transform: translate(0%, -50%);
+    width: 45%;
+}
+.home3 h2,.home3 span,.home4 h2{
+    font-size: 50px;
+}
+/* 首页4区图片 */
+.home4 img{
+
+    top: 50%;
+    left: 5%;
+    top: 50%;
+    transform: translate(0%, -50%);
+    width: 45%;
+}
+/* 首页4区右侧 */
+.home4 .sy_r{
+    width: 35%;
+    border: 2px dashed rgba(0, 0, 0, .55);
+    position: absolute;
+    top: 50%;
+    left: 75%;
+    transform: translate(-50%, -50%);
+    border-radius: 10px;
+    padding: 10px;
+}
+ }
+
+@media (min-width: 1200px) and (max-width: 1400px) { 
+
+   /* 首页1区左侧图 */
+   .home1 .home_lp {
+    width: 25%;
+    top: 25%;
+    left: 10%;
+}
+
+/* 首页1区右侧图 */
+.home1 .home_rp {
+    width: 25%;
+    top: 40%;
+    right: 10%;
+} 
+/* 首页2区右侧图 */
+.home2 img {
+    height: 70%;
+}
+.home2 h1 {
+    font-size: 68px;
+    font-family: Serif;
+}
+/* 首页3区左侧 */
+.home3 .sy_l {
+    top: 50%;
+    left: 25%;
+    transform: translate(-55%, -50%);
+}
+
+/* 首页3区图片 */
+.home3 img {
+    top: 50%;
+    right: 5%;
+    top: 50%;
+    transform: translate(0%, -50%);
+    width: 45%;
+}
+.home3 h2,.home3 span,.home4 h2{
+    font-size: 50px;
+}
+/* 首页4区图片 */
+.home4 img{
+    top: 50%;
+    left: 5%;
+    top: 50%;
+    transform: translate(0%, -50%);
+    width: 45%;
+}
+/* 首页4区右侧 */
+.home4 .sy_r{
+    width: 30%;
+    border: 2px dashed rgba(0, 0, 0, .55);
+    position: absolute;
+    top: 50%;
+    left: 75%;
+    transform: translate(-50%, -50%);
+    border-radius: 10px;
+    padding: 10px;
+}
+ }
+
+@media (min-width: 1400px)  {
 /* 首页1区左侧图 */
 .home1 .home_lp {
     width: 25%;
-    position: absolute;
     top: 15%;
     left: 10%;
 }
@@ -19,15 +313,77 @@
 /* 首页1区右侧图 */
 .home1 .home_rp {
     width: 25%;
-    position: absolute;
     top: 30%;
     right: 10%;
 }
+/* 首页2区右侧图 */
+.home2 img {
+    height: 85%;
+}
+.home2 h1 {
+    font-size: 68px;
+    font-family: Serif;
+}
 
-.home1 img,
-.home2 img,
-.home3 img,
-.home4 img {
+/* 首页3区左侧 */
+.home3 .sy_l {
+    top: 50%;
+    left: 25%;
+    transform: translate(-65%, -50%);
+}
+
+/* 首页3区图片 */
+.home3 img {
+    top: 50%;
+    right: 5%;
+    top: 50%;
+    transform: translate(0%, -50%);
+    width: 48%;
+}
+.home3 h2,.home3 span,.home4 h2{
+    font-size: 50px;
+}
+/* 首页4区图片 */
+.home4 img{
+    top: 50%;
+    left: 5%;
+    top: 50%;
+    transform: translate(0%, -50%);
+    width: 50%;
+}
+/* 首页4区右侧 */
+.home4 .sy_r{
+    border: 2px dashed rgba(0, 0, 0, .55);
+    position: absolute;
+    top: 50%;
+    left: 75%;
+    transform: translate(-50%, -50%);
+    border-radius: 10px;
+    padding: 10px;
+}
+}
+/* ========================= */
+
+.sy_nr{
+    overflow:hidden;
+}
+/* 首页1区左侧图,首页1区右侧图 */
+.home1 .home_lp,.home1 .home_rp{
+    position: absolute;
+    transition: position 2s;
+}
+
+.home1,.home2 {
+    color: rgba(0, 0, 0, .55);
+    /* 垂直左右居中 */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    overflow:hidden;
+}
+
+.home1 img,.home2 img,.home3 img,.home4 img {
     border-radius: 10px;
 }
 /* 首页2区 字体颜色，透明效果 */
@@ -41,10 +397,6 @@
     transition-timing-function: opacity 1s;
 }
 
-/* 首页2区右侧图 */
-.home2 img {
-    height: 85%;
-}
 /* 首页2区右侧 */
 .home2 .sy_r {
     width: 50%;
@@ -54,12 +406,6 @@
     align-items: center;
     text-align: center;
 }
-/* 首页2区字体 */
-.home2 h1 {
-    font-size: 68px;
-    font-family: Serif;
-}
-
 /* 首页3区 */
 .home3 {
     position: relative;
@@ -74,27 +420,19 @@
 .home3 .sy_l {
     display: inline-block;
     position: absolute;
-    top: 50%;
-    left: 25%;
-    transform: translate(-75%, -50%);
-    border: 2px solid rgba(0, 0, 0, .55);
+    transform: translate(-50%, -50%);
     border-radius: 10px;
     padding: 10px;
+    z-index: 999;
 }
 /* 设置字体、大小 */
 .home3 h2,.home3 span,.home4 h2{
-    font-size: 50px;
     font-family: Serif;
 }
 /* 首页3区图片 */
 .home3 img {
     display: inline-block;
     position: absolute;
-    top: 50%;
-    right: 10%;
-    top: 50%;
-    transform: translate(0%, -50%);
-    width: 48%;
 }
 
 /* 首页4区 */
@@ -111,11 +449,11 @@
 .home4 img{
     display: inline-block;
     position: absolute;
-    top: 50%;
+    /* top: 50%;
     left: 5%;
     top: 50%;
     transform: translate(0%, -50%);
-    width: 50%;
+    width: 50%; */
 }
 /* 首页4区右侧 */
 .home4 .sy_r{
@@ -123,11 +461,11 @@
     display: inline-block;
     border: 2px dashed rgba(0, 0, 0, .55);
     position: absolute;
-    top: 50%;
+    /* top: 50%;
     left: 75%;
     transform: translate(-50%, -50%);
     border-radius: 10px;
-    padding: 10px;
+    padding: 10px; */
 }
 /* 首页4区文字 */
 .home4 span{
