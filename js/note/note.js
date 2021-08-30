@@ -1,16 +1,22 @@
+document.write("<script language=javascript src='../../api/note/note.js'></script>");
 $(function () {
-    for(var i = 1;i <= 6; i++ ){
-        // var code =  "<div class='col'>"+
-        //             "<div class='card shadow'>"+
-        //             "<img src='img/hhhsl.jpg' class='card-img-top'>"+
-        //             "<div class='card-body'>"+
-        //             "<p class='card-text'>Some quick example text to build on the card</p>"+
-        //             "</div></div></div>"
-        var code =  "<div class='col'>"+
-                    "<div class='card shadow'>"+
-                    "<img src='img/null.jpg' class='card-img-top' style='height:100%;'>"+
-                    "</div></div>"
-        $(".node .node_nr .row").append(code)
+    
+    if(getnote() != null && getnote().status == 200){
+        var rec = getnote()
+        var code =  ''
+        rec.data.forEach(ele => {
+            code +=  "<div class='col'>"+
+            "<div class='card shadow'>"+
+            "<img src='"+ele.picture+'/'+ele.picturename+"' class='card-img-top'>"+
+            "<div class='card-body'>"+
+            "<p class='card-text'>"+ele.title+"</p>"+
+            "</div></div></div>"
+        });
+    }else{
+        code =  "<div class='col'>"+
+        "<div class='card shadow'>"+
+        "<img src='img/null.jpg' class='card-img-top' style='height:100%;'>"+
+        "</div></div>"
     }
-    console.log("getUrl()"+getUrl())        
+    $(".node .node_nr .row").append(code)
 });

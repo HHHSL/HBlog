@@ -1,29 +1,30 @@
+document.write("<script language=javascript src='../../api/daily/daily.js'></script>");
 $(function () {
-    for (var i = 1; i <= 4; i++) {
-        // var code = "<div class='card shadow'>" +
-        //     "<div class='card-header'>06-07</div>" +
-        //     "<div class='card-body'>" +
-        //     "<blockquote class='blockquote mb-0'>" +
-        //     "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>" +
-        //     "<div class='picture'>" +
-        //     "<a href=''><img src='img/hhhsl.jpg' class='ms-1 me-1'></a>" +
-        //     "<a href=''><img src='img/hhhsl.jpg' class='ms-1 me-1'></a>" +
-        //     "<a href=''><img src='img/hhhsl.jpg' class='ms-1 me-1'></a>" +
-        //     "<a href=''><img src='img/hhhsl.jpg' class='ms-1 me-1'></a>" +
-        //     "<a href=''><img src='img/hhhsl.jpg' class='ms-1 me-1'></a>" +
-        //     "<a href=''><img src='img/hhhsl.jpg' class='ms-1 me-1'></a>" +
-        //     "</div></blockquote></div></div>"
-        var code = "<div class='card shadow'>" +
-                    "<div class='card-header'></div>" +
-                    "<div class='card-body'>" +
-                    "<blockquote class='blockquote mb-0'>" +
-                    "<p>数据未找到</p>" +
-                    "<div class='picture'>" +
-                    "<a href=''><img src='img/null.jpg' class='ms-1 me-1'></a>" +
-                    "<a href=''><img src='img/null.jpg' class='ms-1 me-1'></a>" +
-                    "<a href=''><img src='img/null.jpg' class='ms-1 me-1'></a>" +
-                    "</div></blockquote></div></div>"
-        $(".daily .daily_nr").append(code)
+    
+    if(getdaily() != null && getdaily().status == 200){
+        var code =  ''
+        var rec = getdaily()
+        rec.data.forEach(ele => {
+            code += "<div class='card shadow'>" +
+            "<div class='card-header'>"+ele.time+"</div>" +
+            "<div class='card-body'>" +
+            "<blockquote class='blockquote mb-0'>" +
+            "<p>"+ele.content+"</p>" +
+            "<div class='picture'>" +
+            "<a href='"+ele.picture+'/'+ele.picturename+"'><img src='"+ele.picture+'/'+ele.picturename+"' class='ms-1 me-1'></a>" +
+            "</div></blockquote></div></div>"
+        });
+    }else{
+        code = "<div class='card shadow'>" +
+        "<div class='card-header'></div>" +
+        "<div class='card-body'>" +
+        "<blockquote class='blockquote mb-0'>" +
+        "<p>数据未找到</p>" +
+        "<div class='picture'>" +
+        "<a href=''><img src='img/null.jpg' class='ms-1 me-1'></a>" +
+        "<a href=''><img src='img/null.jpg' class='ms-1 me-1'></a>" +
+        "<a href=''><img src='img/null.jpg' class='ms-1 me-1'></a>" +
+        "</div></blockquote></div></div>"
     }
-    console.log("getUrl()" + getUrl())
+    $(".daily .daily_nr").append(code)
 });
