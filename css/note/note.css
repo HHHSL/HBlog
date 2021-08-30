@@ -5,6 +5,9 @@
     .node_nr .card .card-text{
         font-size: 18px;
     }
+    #prompt{
+        width: 80%;
+    }
 }
 @media (min-width: 576px) and (max-width: 768px) { 
     .node .container {
@@ -12,6 +15,9 @@
     }
     .node_nr .card .card-text{
         font-size: 16px;
+    }
+    #prompt{
+        width: 70%;
     }
 }
 @media (min-width: 768px) and (max-width: 992px) { 
@@ -21,6 +27,9 @@
     .node_nr .card .card-text{
         font-size: 15px;
     }
+    #prompt{
+        width: 60%;
+    }
 }
 @media (min-width: 992px) and (max-width: 1200px) { 
     .node_nr .card .card-text{
@@ -29,10 +38,16 @@
     .container {
         width: 90%;
     }
+    #prompt{
+        width: 40%;
+    }
 }
 @media (min-width: 1200px) and (max-width: 1400px) { 
     .container {
         width: 90%;
+    }
+    #prompt{
+        width: 40%;
     }
 }
 
@@ -42,6 +57,9 @@
     }
     .container {
         width: 90%;
+    }
+    #prompt{
+        width: 30%;
     }
 }
 .node .labels{
@@ -65,4 +83,8 @@
 }
 .node .container .paging .page-link{
     color: black;
+}
+#prompt{
+    z-index: 999;
+    top: 28%!important;
 }

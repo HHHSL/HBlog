@@ -13,7 +13,9 @@
     .r_nr .card .card-body span {
         bottom: 4%;
     }
-
+    #prompt{
+        width: 80%;
+    }
 }
 @media (min-width: 576px) and (max-width: 768px) { 
     /* 内容字体大小 */
@@ -29,6 +31,9 @@
     }
     .r_nr .container {
         width: 70%;
+    }
+    #prompt{
+        width: 60%;
     }
 }
 @media (min-width: 768px) and (max-width: 992px) { 
@@ -46,6 +51,9 @@
     .r_nr .container {
         width: 70%;
     }
+    #prompt{
+        width: 50%;
+    }
 }
 @media (min-width: 992px) and (max-width: 1200px) { 
     /* 内容字体大小 */
@@ -62,6 +70,9 @@
     .r_nr .container {
         width: 70%;
     }
+    #prompt{
+        width: 40%;
+    }
 }
 @media (min-width: 1200px) and (max-width: 1400px) { 
     /* 设置语言栏未知 */
@@ -70,6 +81,9 @@
     }
     .r_nr .container {
         width: 70%;
+    }
+    #prompt{
+        width: 40%;
     }
 }
 
@@ -80,6 +94,9 @@
     }
     .r_nr .container {
         width: 70%;
+    }
+    #prompt{
+        width: 30%;
     }
 }
 .r_nr .container {
@@ -127,4 +144,8 @@
 .r_nr .paging .page-item:active {
     color: red;
     box-shadow: 0;
+}
+#prompt{
+    z-index: 999;
+    top: 28%!important;
 }

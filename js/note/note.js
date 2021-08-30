@@ -17,6 +17,13 @@ $(function () {
         "<div class='card shadow'>"+
         "<img src='img/null.jpg' class='card-img-top' style='height:100%;'>"+
         "</div></div>"
+        var prompt = "<div id='prompt' class='text-center alert alert-danger alert-dismissible fade show position-absolute top-50 start-50 translate-middle' role='alert'>"+
+        "<strong>Sorry</strong> 服务器出错,请联系管理员"+
+        "<button type='button' class='btn-close' data-bs-dismiss='alert' aria-label='Close'></button></div>"
+        $(".node").append(prompt)
     }
     $(".node .node_nr .row").append(code)
+    setTimeout(function (){
+        $("#prompt").remove()
+    }, 3000);
 });

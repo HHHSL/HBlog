@@ -1,6 +1,5 @@
 document.write("<script language=javascript src='../../api/daily/daily.js'></script>");
 $(function () {
-    
     if(getdaily() != null && getdaily().status == 200){
         var code =  ''
         var rec = getdaily()
@@ -25,6 +24,13 @@ $(function () {
         "<a href=''><img src='img/null.jpg' class='ms-1 me-1'></a>" +
         "<a href=''><img src='img/null.jpg' class='ms-1 me-1'></a>" +
         "</div></blockquote></div></div>"
+        var prompt = "<div id='prompt' class='text-center alert alert-danger alert-dismissible fade show position-absolute top-50 start-50 translate-middle' role='alert'>"+
+        "<strong>Sorry</strong> 服务器出错,请联系管理员"+
+        "<button type='button' class='btn-close' data-bs-dismiss='alert' aria-label='Close'></button></div>"
+        $(".daily").append(prompt)
     }
     $(".daily .daily_nr").append(code)
+    setTimeout(function (){
+        $("#prompt").remove()
+    }, 3000);
 });
