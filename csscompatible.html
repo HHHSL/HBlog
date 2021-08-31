@@ -28,7 +28,14 @@
     </div>
     <script>
         $(function(){
-
+            $(".incode").val('')
+            $(".outcode").val('')
+            $(".incode").blur(function(){
+                if($(".incode").val().indexOf('\n') > -1){
+                    console.log($(".outcode").val())
+                }
+                $(".outcode").val($(".incode").val())
+            })
         })
     </script>
 </body>
