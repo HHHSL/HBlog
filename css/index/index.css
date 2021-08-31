@@ -17,6 +17,10 @@
     }
     .home2 h1 {
         font-size: 30px;
+        -webkit-font-family: Serif;
+        -moz-font-family: Serif;
+        -o-font-family: Serif;
+        -ms-font-family: Serif;
         font-family: Serif;
     }
         /* 首页3区左侧 */
@@ -30,6 +34,10 @@
 .home3 img {
     right: 10%;
     top: 13%;
+    -moz-transform: translate(0%, -50%);
+    -webkit-transform: translate(0%, -50%);
+    -o-transform: translate(0%, -50%);
+    -ms-transform: translate(0%, -50%);
     transform: translate(0%, -50%);
     width: 80%;
 }
@@ -41,6 +49,10 @@
     top: 20%;
     left: 50%;
     top: 50%;
+    -moz-transform: translate(-50%, -80%);
+    -webkit-transform: translate(-50%, -80%);
+    -o-transform: translate(-50%, -80%);
+    -ms-transform: translate(-50%, -80%);
     transform: translate(-50%, -80%);
     width: 80%;
 }
@@ -48,9 +60,18 @@
 .home4 .sy_r{
     width: 80%;
     border: 2px dashed rgba(0, 0, 0, .55);
+    -webkit-position: absolute;
+    -moz-position: absolute;
+    -o-position: absolute;
+    -ms-position: absolute;
+    -webkit-position: absolute;
     position: absolute;
     top: 80%;
     left: 50%;
+    -moz-transform: translate(-50%, -80%);
+    -webkit-transform: translate(-50%, -80%);
+    -o-transform: translate(-50%, -80%);
+    -ms-transform: translate(-50%, -80%);
     transform: translate(-50%, -80%);
     border-radius: 10px;
     padding: 10px;
@@ -77,12 +98,20 @@
     }
     .home2 h1 {
         font-size: 40px;
+        -webkit-font-family: Serif;
+        -moz-font-family: Serif;
+        -o-font-family: Serif;
+        -ms-font-family: Serif;
         font-family: Serif;
     }
     /* 首页3区左侧 */
 .home3 .sy_l {
     top: 50%;
     left: 25%;
+    -webkit-transform: translate(0%, -50%);
+    -moz-transform: translate(0%, -50%);
+    -o-transform: translate(0%, -50%);
+    -ms-transform: translate(0%, -50%);
     transform: translate(0%, -50%);
 }
 
@@ -90,7 +119,11 @@
 .home3 img {
     top: 50%;
     right: 30%;
-    top: 50%;
+    top: 50%;     
+    -webkit-transform: translate(0%, -50%);
+    -moz-transform: translate(0%, -50%);
+    -o-transform: translate(0%, -50%);
+    -ms-transform: translate(0%, -50%);
     transform: translate(0%, -50%);
     width: 100%;
 }
@@ -102,6 +135,10 @@
     top: 50%;
     left: -50%;
     top: 50%;
+    -webkit-transform: translate(0%, -50%);
+    -moz-transform: translate(0%, -50%);
+    -o-transform: translate(0%, -50%);
+    -ms-transform: translate(0%, -50%);
     transform: translate(0%, -50%);
     width: 100%;
 }
@@ -109,9 +146,17 @@
 .home4 .sy_r{
     width: 60%;
     border: 2px dashed rgba(0, 0, 0, .55);
+    -webkit-position: absolute;
+    -moz-position: absolute;
+    -o-position: absolute;
+    -ms-position: absolute;
     position: absolute;
     top: 50%;
     left: 75%;
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
     border-radius: 10px;
     padding: 10px;
@@ -137,12 +182,20 @@
 }
 .home2 h1 {
     font-size: 50px;
+    -webkit-font-family: Serif;
+    -moz-font-family: Serif;
+    -o-font-family: Serif;
+    -ms-font-family: Serif;
     font-family: Serif;
 }
 /* 首页3区左侧 */
 .home3 .sy_l {
     top: 50%;
-    left: 30%;
+    left: 30%;  
+    -webkit-transform: translate(-45%, -50%);
+    -moz-transform: translate(-45%, -50%);
+    -o-transform: translate(-45%, -50%);
+    -ms-transform: translate(-45%, -50%);
     transform: translate(-45%, -50%);
 }
 
@@ -151,6 +204,10 @@
     top: 50%;
     right: -5%;
     top: 50%;
+    -webkit-transform: translate(0%, -50%);
+    -moz-transform: translate(0%, -50%);
+    -o-transform: translate(0%, -50%);
+    -ms-transform: translate(0%, -50%);
     transform: translate(0%, -50%);
     width: 45%;
 }
@@ -162,6 +219,10 @@
     top: 50%;
     left: -10%;
     top: 50%;
+    -webkit-transform: translate(0%, -50%);
+    -moz-transform: translate(0%, -50%);
+    -o-transform: translate(0%, -50%);
+    -ms-transform: translate(0%, -50%);
     transform: translate(0%, -50%);
     width: 70%;
 }
@@ -169,9 +230,17 @@
 .home4 .sy_r{
     width: 40%;
     border: 2px dashed rgba(0, 0, 0, .55);
+    -webkit-position: absolute;
+    -moz-position: absolute;
+    -o-position: absolute;
+    -ms-position: absolute;
     position: absolute;
     top: 50%;
     left: 75%;
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
     border-radius: 10px;
     padding: 10px;
@@ -198,12 +267,20 @@
 }
 .home2 h1 {
     font-size: 68px;
+    -webkit-font-family: Serif;
+    -moz-font-family: Serif;
+    -o-font-family: Serif;
+    -ms-font-family: Serif;
     font-family: Serif;
 }
 /* 首页3区左侧 */
 .home3 .sy_l {
     top: 50%;
     left: 25%;
+    -webkit-transform: translate(-55%, -50%);
+    -moz-transform: translate(-55%, -50%);
+    -o-transform: translate(-55%, -50%);
+    -ms-transform: translate(-55%, -50%);
     transform: translate(-55%, -50%);
 }
 
@@ -212,6 +289,10 @@
     top: 50%;
     right: 0%;
     top: 50%;
+    -webkit-transform: translate(0%, -50%);
+    -moz-transform: translate(0%, -50%);
+    -o-transform: translate(0%, -50%);
+    -ms-transform: translate(0%, -50%);
     transform: translate(0%, -50%);
     width: 45%;
 }
@@ -220,10 +301,13 @@
 }
 /* 首页4区图片 */
 .home4 img{
-
     top: 50%;
     left: 5%;
     top: 50%;
+    -webkit-transform: translate(0%, -50%);
+    -moz-transform: translate(0%, -50%);
+    -o-transform: translate(0%, -50%);
+    -ms-transform: translate(0%, -50%);
     transform: translate(0%, -50%);
     width: 45%;
 }
@@ -231,9 +315,17 @@
 .home4 .sy_r{
     width: 35%;
     border: 2px dashed rgba(0, 0, 0, .55);
+    -webkit-position: absolute;
+    -moz-position: absolute;
+    -o-position: absolute;
+    -ms-position: absolute;
     position: absolute;
     top: 50%;
     left: 75%;
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
     border-radius: 10px;
     padding: 10px;
@@ -261,12 +353,20 @@
 }
 .home2 h1 {
     font-size: 68px;
+    -webkit-font-family: Serif;
+    -moz-font-family: Serif;
+    -o-font-family: Serif;
+    -ms-font-family: Serif;
     font-family: Serif;
 }
 /* 首页3区左侧 */
 .home3 .sy_l {
     top: 50%;
     left: 25%;
+    -webkit-transform: translate(-55%, -50%);
+    -moz-transform: translate(-55%, -50%);
+    -o-transform: translate(-55%, -50%);
+    -ms-transform: translate(-55%, -50%);
     transform: translate(-55%, -50%);
 }
 
@@ -275,6 +375,10 @@
     top: 50%;
     right: 5%;
     top: 50%;
+    -webkit-transform: translate(0%, -50%);
+    -moz-transform: translate(0%, -50%);
+    -o-transform: translate(0%, -50%);
+    -ms-transform: translate(0%, -50%);
     transform: translate(0%, -50%);
     width: 45%;
 }
@@ -286,6 +390,10 @@
     top: 50%;
     left: 5%;
     top: 50%;
+    -webkit-transform: translate(0%, -50%);
+    -moz-transform: translate(0%, -50%);
+    -o-transform: translate(0%, -50%);
+    -ms-transform: translate(0%, -50%);
     transform: translate(0%, -50%);
     width: 45%;
 }
@@ -293,9 +401,17 @@
 .home4 .sy_r{
     width: 30%;
     border: 2px dashed rgba(0, 0, 0, .55);
+    -webkit-position: absolute;
+    -moz-position: absolute;
+    -o-position: absolute;
+    -ms-position: absolute;
     position: absolute;
     top: 50%;
     left: 75%;
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
     border-radius: 10px;
     padding: 10px;
@@ -322,6 +438,10 @@
 }
 .home2 h1 {
     font-size: 68px;
+    -webkit-font-family: Serif;
+    -moz-font-family: Serif;
+    -o-font-family: Serif;
+    -ms-font-family: Serif;
     font-family: Serif;
 }
 
@@ -329,6 +449,10 @@
 .home3 .sy_l {
     top: 50%;
     left: 25%;
+    -webkit-transform: translate(-65%, -50%);
+    -moz-transform: translate(-65%, -50%);
+    -o-transform: translate(-65%, -50%);
+    -ms-transform: translate(-65%, -50%);
     transform: translate(-65%, -50%);
 }
 
@@ -337,6 +461,10 @@
     top: 50%;
     right: 5%;
     top: 50%;
+    -webkit-transform: translate(0%, -50%);
+    -moz-transform: translate(0%, -50%);
+    -o-transform: translate(0%, -50%);
+    -ms-transform: translate(0%, -50%);
     transform: translate(0%, -50%);
     width: 48%;
 }
@@ -348,15 +476,27 @@
     top: 50%;
     left: 5%;
     top: 50%;
+    -webkit-transform: translate(0%, -50%);
+    -moz-transform: translate(0%, -50%);
+    -o-transform: translate(0%, -50%);
+    -ms-transform: translate(0%, -50%);
     transform: translate(0%, -50%);
     width: 50%;
 }
 /* 首页4区右侧 */
 .home4 .sy_r{
     border: 2px dashed rgba(0, 0, 0, .55);
+    -webkit-position: absolute;
+    -moz-position: absolute;
+    -o-position: absolute;
+    -ms-position: absolute;
     position: absolute;
     top: 50%;
     left: 75%;
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
     border-radius: 10px;
     padding: 10px;
@@ -364,23 +504,35 @@
 }
 /* ========================= */
 
-.sy_nr{
+.sy_nr{     
+    -webkit-overflow:hidden;
+    -moz-overflow:hidden;
+    -o-overflow:hidden;
+    -ms-overflow:hidden;
     overflow:hidden;
 }
 /* 首页1区左侧图,首页1区右侧图 */
 .home1 .home_lp,.home1 .home_rp{
-    position: absolute;
+    -webkit-position: absolute;
+    -moz-position: absolute;
+    -o-position: absolute;
+    -ms-position: absolute;
+    position: absolute;  
+    -webkit-transition: position 2s;
+    -moz-transition: position 2s;
+    -o-transition: position 2s;
+    -ms-transition: position 2s;
     transition: position 2s;
 }
 
 .home1,.home2 {
     color: rgba(0, 0, 0, .55);
     /* 垂直左右居中 */
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    overflow:hidden;
+    -webkit-display: flex;-moz-display: flex;-o-display: flex;-ms-display: flex;display: flex;
+    -webkit-justify-content: center;-moz-justify-content: center;-o-justify-content: center;-ms-justify-content: center;justify-content: center;   
+    -webkit-align-items: center;-moz-align-items: center;-o-align-items: center;-ms-align-items: center;align-items: center;     
+    -webkit-text-align: center;-moz-text-align: center;-o-text-align: center;-ms-text-align: center;text-align: center;     
+    -webkit-overflow:hidden;-moz-overflow:hidden;-o-overflow:hidden;-ms-overflow:hidden;overflow:hidden;
 }
 
 .home1 img,.home2 img,.home3 img,.home4 img {
@@ -388,84 +540,78 @@
 }
 /* 首页2区 字体颜色，透明效果 */
 .home2 {
-    color: black;
-    opacity: 0;
-    transition: opacity 1s;
-    transition-delay: opacity 1s;
-    transition-duration: opacity 1s;
-    transition-property: opacity 1s;
-    transition-timing-function: opacity 1s;
+    color: black;         
+    -webkit-opacity: 0;-moz-opacity: 0;-o-opacity: 0;-ms-opacity: 0;opacity: 0;       
+    -webkit-transition: opacity 1s;-moz-transition: opacity 1s;-o-transition: opacity 1s;-ms-transition: opacity 1s;transition: opacity 1s;
+    -webkit-transition-delay: opacity 1s;-moz-transition-delay: opacity 1s;-o-transition-delay: opacity 1s;-ms-transition-delay: opacity 1s;transition-delay: opacity 1s;
+    -webkit-transition-duration: opacity 1s;-moz-transition-duration: opacity 1s;-o-transition-duration: opacity 1s;-ms-transition-duration: opacity 1s;transition-duration: opacity 1s;
+    -webkit-transition-property: opacity 1s;-moz-transition-property: opacity 1s;-o-transition-property: opacity 1s;-ms-transition-property: opacity 1s;transition-property: opacity 1s;
+    -webkit-transition-timing-function: opacity 1s;-moz-transition-timing-function: opacity 1s;-o-transition-timing-function: opacity 1s;-ms-transition-timing-function: opacity 1s;transition-timing-function: opacity 1s;
 }
 
 /* 首页2区右侧 */
 .home2 .sy_r {
     width: 50%;
-    height: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
+    height: 100%;   
+    -webkit-display: flex;-moz-display: flex;-o-display: flex;-ms-display: flex;display: flex;   
+    -webkit-justify-content: center;-moz-justify-content: center;-o-justify-content: center;-ms-justify-content: center;justify-content: center;     
+    -webkit-align-items: center;-moz-align-items: center;-o-align-items: center;-ms-align-items: center;align-items: center;     
+    -webkit-text-align: center;-moz-text-align: center;-o-text-align: center;-ms-text-align: center;text-align: center;
 }
 /* 首页3区 */
 .home3 {
-    position: relative;
-    opacity: 0;
-    transition: opacity 1s;
-    transition-delay: opacity 1s;
-    transition-duration: opacity 1s;
-    transition-property: opacity 1s;
-    transition-timing-function: opacity 1s;
+    -webkit-position: relative;-moz-position: relative;-o-position: relative;-ms-position: relative;position: relative;
+    -webkit-opacity: 0;-moz-opacity: 0;-o-opacity: 0;-ms-opacity: 0;opacity: 0;       
+    -webkit-transition: opacity 1s;-moz-transition: opacity 1s;-o-transition: opacity 1s;-ms-transition: opacity 1s;transition: opacity 1s;
+    -webkit-transition-delay: opacity 1s;-moz-transition-delay: opacity 1s;-o-transition-delay: opacity 1s;-ms-transition-delay: opacity 1s;transition-delay: opacity 1s;
+    -webkit-transition-duration: opacity 1s;-moz-transition-duration: opacity 1s;-o-transition-duration: opacity 1s;-ms-transition-duration: opacity 1s;transition-duration: opacity 1s;
+    -webkit-transition-property: opacity 1s;-moz-transition-property: opacity 1s;-o-transition-property: opacity 1s;-ms-transition-property: opacity 1s;transition-property: opacity 1s;
+    -webkit-transition-timing-function: opacity 1s;-moz-transition-timing-function: opacity 1s;-o-transition-timing-function: opacity 1s;-ms-transition-timing-function: opacity 1s;transition-timing-function: opacity 1s;
 }
 /* 首页3区左侧 */
-.home3 .sy_l {
-    display: inline-block;
-    position: absolute;
-    transform: translate(-50%, -50%);
+.home3 .sy_l {       
+    -webkit-display: inline-block;-moz-display: inline-block;-o-display: inline-block;-ms-display: inline-block;display: inline-block;
+    -webkit-position: absolute;-moz-position: absolute;-o-position: absolute;-ms-position: absolute;position: absolute;
+    -webkit-transform: translate(-50%, -50%);-moz-transform: translate(-50%, -50%);-o-transform: translate(-50%, -50%);-ms-transform: translate(-50%, -50%);transform: translate(-50%, -50%);
     border-radius: 10px;
     padding: 10px;
     z-index: 999;
 }
 /* 设置字体、大小 */
 .home3 h2,.home3 span,.home4 h2{
+    -webkit-font-family: Serif;
+    -moz-font-family: Serif;
+    -o-font-family: Serif;
+    -ms-font-family: Serif;
     font-family: Serif;
 }
 /* 首页3区图片 */
-.home3 img {
-    display: inline-block;
-    position: absolute;
+.home3 img {     
+    -webkit-display: inline-block;-moz-display: inline-block;-o-display: inline-block;-ms-display: inline-block;display: inline-block;
+    -webkit-position: absolute;-moz-position: absolute;-o-position: absolute;-ms-position: absolute;position: absolute;
 }
 
 /* 首页4区 */
 .home4{
-    position: relative;
-    opacity: 0;
-    transition: opacity 1s;
-    transition-delay: opacity 1s;
-    transition-duration: opacity 1s;
-    transition-property: opacity 1s;
-    transition-timing-function: opacity 1s;
+    -webkit-position: relative;-moz-position: relative;-o-position: relative;-ms-position: relative;position: relative;
+    -webkit-opacity: 0;-moz-opacity: 0;-o-opacity: 0;-ms-opacity: 0;opacity: 0;       
+    -webkit-transition: opacity 1s;-moz-transition: opacity 1s;-o-transition: opacity 1s;-ms-transition: opacity 1s;transition: opacity 1s;
+    -webkit-transition-delay: opacity 1s;-moz-transition-delay: opacity 1s;-o-transition-delay: opacity 1s;-ms-transition-delay: opacity 1s;transition-delay: opacity 1s;
+    -webkit-transition-duration: opacity 1s;-moz-transition-duration: opacity 1s;-o-transition-duration: opacity 1s;-ms-transition-duration: opacity 1s;transition-duration: opacity 1s;
+    -webkit-transition-property: opacity 1s;-moz-transition-property: opacity 1s;-o-transition-property: opacity 1s;-ms-transition-property: opacity 1s;transition-property: opacity 1s;
+    -webkit-transition-timing-function: opacity 1s;-moz-transition-timing-function: opacity 1s;-o-transition-timing-function: opacity 1s;-ms-transition-timing-function: opacity 1s;transition-timing-function: opacity 1s;
 }
 /* 首页4区图片 */
 .home4 img{
-    display: inline-block;
-    position: absolute;
-    /* top: 50%;
-    left: 5%;
-    top: 50%;
-    transform: translate(0%, -50%);
-    width: 50%; */
+    -webkit-display: inline-block;-moz-display: inline-block;-o-display: inline-block;-ms-display: inline-block;display: inline-block;        
+    -webkit-position: absolute;-moz-position: absolute;-o-position: absolute;-ms-position: absolute;position: absolute;
 }
 /* 首页4区右侧 */
 .home4 .sy_r{
-    text-align: center;
-    display: inline-block;
-    border: 2px dashed rgba(0, 0, 0, .55);
-    position: absolute;
-    /* top: 50%;
-    left: 75%;
-    transform: translate(-50%, -50%);
-    border-radius: 10px;
-    padding: 10px; */
+    text-align: center;     
+    -webkit-display: inline-block;-moz-display: inline-block;-o-display: inline-block;-ms-display: inline-block;display: inline-block;
+    border: 2px dashed rgba(0, 0, 0, .55);     
+    -webkit-position: absolute;-moz-position: absolute;-o-position: absolute;-ms-position: absolute;position: absolute;
 }
 /* 首页4区文字 */
 .home4 span{
