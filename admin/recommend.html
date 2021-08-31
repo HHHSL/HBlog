@@ -21,10 +21,13 @@
 </head>
 
 <body>
+    
     <script src="../js/tool/admin/adminnav.js"></script>
 
     <div class="admin_rec mt-3">
         <div class="rec_nr container shadow-lg p-4">
+            <button type="button" class="btn btn-outline-primary btn-sm m-1" data-bs-toggle="modal" data-bs-target="#staticBackdrop">新增</button>
+            <button type="button" class="btn btn-outline-warning btn-sm m-1">导出</button>
             <div class="table-responsive">
                 <table class="table table-striped">
                     <thead>
@@ -33,11 +36,8 @@
                             <th scope="col">标题</th>
                             <th scope="col">介绍</th>
                             <th scope="col">链接</th>
-                            <th scope="col">分类</th>
-                            <th scope="col">操作
-                                <button type="button" class="btn btn-outline-primary btn-sm" data-bs-toggle="modal"
-                                    data-bs-target="#staticBackdrop"> 新增</button>
-                            </th>
+                            <th scope="col" style="white-space: nowrap">分类</th>
+                            <th scope="col" style="white-space: nowrap">操作</th>
                         </tr>
                     </thead>
                     <tbody class="nr_tbody">
@@ -63,8 +63,8 @@
                     ...
                 </div>
                 <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                    <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Understood</button>
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">取消</button>
+                    <button type="button" class="btn btn-primary" data-bs-dismiss="modal">确定</button>
                 </div>
             </div>
         </div>

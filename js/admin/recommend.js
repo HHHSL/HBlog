@@ -11,7 +11,7 @@ function InitializedData() {
         var code =  ''
         rec.data.forEach(ele => {
             code +="<tr><th scope='row'>"+ele.id+"</th>"+
-            "<td>"+ele.title+"</td>"+
+            "<td><strong>"+ele.title+"</strong></td>"+
             "<td>"+ele.introduce+"</td>"+
             "<td>"+ele.address+"</td>"+
             "<td>"+ele.language+"</td><td>"+
