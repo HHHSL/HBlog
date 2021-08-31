@@ -21,9 +21,10 @@ $(function () {
         "<strong>Sorry</strong> 服务器出错,请联系管理员"+
         "<button type='button' class='btn-close' data-bs-dismiss='alert' aria-label='Close'></button></div>"
         $(".node").append(prompt)
+
+        setTimeout(function (){
+            $("#prompt").remove()
+        }, 3000);
     }
-    $(".node .node_nr .row").append(code)
-    setTimeout(function (){
-        $("#prompt").remove()
-    }, 3000);
+        $(".node .node_nr .row").append(code)
 });

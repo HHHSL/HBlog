@@ -4,14 +4,20 @@ $(function () {
         var code =  ''
         var rec = getdaily()
         rec.data.forEach(ele => {
+            var imgcode = ''
+            if(ele.picturename != null){
+                ele.picturename.split(',').forEach(ela => {
+                    imgcode+= "<a href='"+ele.picture+'/'+ela+"'><img src='"+ele.picture+'/'+ela+"' class='ms-1 me-1'></a>"
+                });
+            }else{
+                imgcode = ''
+            }
             code += "<div class='card shadow'>" +
             "<div class='card-header'>"+ele.time+"</div>" +
             "<div class='card-body'>" +
             "<blockquote class='blockquote mb-0'>" +
             "<p>"+ele.content+"</p>" +
-            "<div class='picture'>" +
-            "<a href='"+ele.picture+'/'+ele.picturename+"'><img src='"+ele.picture+'/'+ele.picturename+"' class='ms-1 me-1'></a>" +
-            "</div></blockquote></div></div>"
+            "<div class='picture'>" +imgcode+"</div></blockquote></div></div>"
         });
     }else{
         code = "<div class='card shadow'>" +
