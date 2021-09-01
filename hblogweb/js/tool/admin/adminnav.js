@@ -1,6 +1,6 @@
 document.writeln("<nav class=\'navbar navbar-expand-lg navbar-light bg-light\'>");
 document.writeln("        <div class=\'container\'>");
-document.writeln("            <a class=\'navbar-brand\' href=\'../admin.html\'>Admin</a>");
+document.writeln("            <a class=\'navbar-brand\' href=\'../index.html\'>HHHSL</a>");
 document.writeln("            <button class=\'navbar-toggler\' type=\'button\' data-bs-toggle=\'collapse\' data-bs-target=\'#navbarText\'");
 document.writeln("                aria-controls=\'navbarText\' aria-expanded=\'false\' aria-label=\'Toggle navigation\'>");
 document.writeln("                <span class=\'navbar-toggler-icon\'></span>");

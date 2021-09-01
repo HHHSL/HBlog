@@ -15,8 +15,8 @@ function InitializedData() {
             "<td>"+ele.introduce+"</td>"+
             "<td>"+ele.address+"</td>"+
             "<td>"+ele.language+"</td><td>"+
-            "<button type='button' class='btn btn-outline-success btn-sm'>修改</button>"+
-            "<button type='button' class='btn btn-outline-danger btn-sm'>删除</button></tr>"
+            "<button type='button' class='btn btn-outline-success btn-sm m-1'>修改</button>"+
+            "<button type='button' class='btn btn-outline-danger btn-sm m-1'>删除</button></tr>"
         });
     }else{
         code +="<tr><th scope='row'>null</th>"+
@@ -24,8 +24,8 @@ function InitializedData() {
             "<td>null</td>"+
             "<td>null</td>"+
             "<td>null</td><td>"+
-            "<button type='button' class='btn btn-outline-success btn-sm'>修改</button>"+
-            "<button type='button' class='btn btn-outline-danger btn-sm'>删除</button></tr>"
+            "<button type='button' class='btn btn-outline-success btn-sm m-1'>修改</button>"+
+            "<button type='button' class='btn btn-outline-danger btn-sm m-1'>删除</button></tr>"
         
         var prompt = "<div id='prompt' class='text-center alert alert-danger alert-dismissible fade show position-absolute top-50 start-50 translate-middle' role='alert'>"+
         "<strong>Sorry</strong> 服务器出错,请联系管理员"+
