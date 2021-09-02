@@ -1,5 +1,8 @@
 document.write("<script language=javascript src='../../api/recommend/recommend.js'></script>");
 $(function () {
+    $("#add").click(function(){
+        console.log("aasadasd")
+    })
     console.log(getrecommend())
     InitializedData()
 });
