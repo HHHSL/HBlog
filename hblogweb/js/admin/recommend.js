@@ -2,14 +2,25 @@ document.write("<script language=javascript src='../../api/recommend/recommend.j
 $(function () {
     InitializedData()
     $("#determine").click(function(){
-        add()
+        console.log($("#staticBackdropLabel").html())
+        if($("#staticBackdropLabel").html() != '新增'){
+            add()
+        }else{
+            up()
+        }
+        
     })
+    $("#add").click(function(){
+        $("#staticBackdropLabel").html('新增')
+    })
+
 
 
 });
 
 // 初始数据
 function InitializedData() {
+    $(".nr_tbody").empty()
     if(getrecommend() != null && getrecommend().status == 200){
         var rec = getrecommend()
         var code =  ''
@@ -19,8 +30,8 @@ function InitializedData() {
             "<td>"+ele.introduce+"</td>"+
             "<td>"+ele.address+"</td>"+
             "<td>"+ele.language+"</td><td>"+
-            "<button type='button' class='btn btn-outline-success btn-sm m-1'>修改</button>"+
-            "<button type='button' class='btn btn-outline-danger btn-sm m-1'>删除</button></tr>"
+            "<button type='button' class='btn btn-outline-success btn-sm m-1' onclick='selbyid("+ele.id+")' data-bs-toggle='modal' data-bs-target='#staticBackdrop'>修改</button>"+
+            "<button type='button' class='btn btn-outline-danger btn-sm m-1' onclick='del("+ele.id+")'>删除</button></tr>"
         });
     }else{
         code +="<tr><th scope='row'>null</th>"+
@@ -42,8 +53,7 @@ function InitializedData() {
     }, 3000);
 }
 
-
-
+//添加
 function add(){
     var formData = new FormData();
     formData.append("file",$("#imgFile")[0].files[0]);
@@ -51,6 +61,38 @@ function add(){
     formData.append("introduce",$("#introduce").val()); 
     formData.append("address",$("#address").val()); 
     formData.append("language",$("#language").val()); 
-
     Addrec(formData)
+}
+
+//修改
+function up(){
+    var formData = new FormData();
+    formData.append("id",$("#id").val());
+    formData.append("title",$("#title").val()); 
+    formData.append("introduce",$("#introduce").val()); 
+    formData.append("address",$("#address").val()); 
+    formData.append("language",$("#language").val()); 
+    Addrec(formData)
+}
+
+// 删除
+function del(id){
+    if(delrec(id).status == 200){
+        InitializedData()
+    }
+}
+
+//查询 
+function selbyid(id){
+    $("#staticBackdropLabel").html('修改')
+    var rec = selrecbyidc(id)
+    if(rec.status == 200){
+        $("#id").val(rec.data.id)
+        $("#title").val(rec.data.title)
+        $("#introduce").val(rec.data.introduce)
+        $("#address").val(rec.data.address)
+        $("#language").val(rec.data.language)
+    }
+        
+    
 }

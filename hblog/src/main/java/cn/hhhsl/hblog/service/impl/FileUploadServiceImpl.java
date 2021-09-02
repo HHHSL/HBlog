@@ -8,6 +8,7 @@ import java.io.File;
 import java.io.FileOutputStream;
 import java.io.IOException;
 import java.io.InputStream;
+import java.util.ArrayList;
 import java.util.List;
 
 
@@ -16,7 +17,7 @@ public class FileUploadServiceImpl implements FileUploadService {
     @Override
     public List addfile(MultipartFile file, String catalogue) {
         String filename = null;
-        List list = null;
+        List list = new ArrayList();
         final String ROUTE = "C:/Users/20368/Desktop/HHHSL/Code/HBlog/hblogweb/img/";
         InputStream is = null;
         FileOutputStream fos = null;
@@ -33,6 +34,7 @@ public class FileUploadServiceImpl implements FileUploadService {
             is.close();
             System.out.println("img/"+catalogue+"/");
             System.out.println(filename);
+
             list.add("img/"+catalogue+"/");
             list.add(filename);
         } catch (IOException e) {

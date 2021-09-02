@@ -10,4 +10,10 @@ public interface RecommendService {
     List<Recommend> getrecommend();
 
     int add(MultipartFile file,Recommend recommend);
+
+    int delrecommend(int id);
+
+    Recommend selrecommendbyid(int id);
+
+    int up(Recommend recommend);
 }

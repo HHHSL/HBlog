@@ -24,10 +24,38 @@ public class Recommendcontroller {
 
     @PostMapping("/add")
     public ReturnResults add(@RequestParam("file") MultipartFile file, Recommend recommend) {
-        System.out.println(recommendService.add(file,recommend));
-        return new ReturnResults().success();
+        if (recommendService.add(file,recommend) == 1){
+            return new ReturnResults().success();
+        }else {
+            return new ReturnResults().error();
+        }
+
     }
 
+    @GetMapping("/del/{id}")
+    public ReturnResults del(@PathVariable int id) {
+        if (recommendService.delrecommend(id) == 1){
+            return new ReturnResults().success();
+        }else {
+            return new ReturnResults().error();
+        }
+    }
 
+    @GetMapping("/sel/{id}")
+    public ReturnResults selrecommendbyid(@PathVariable int id) {
+        if (recommendService.selrecommendbyid(id) != null){
+            return new ReturnResults().success(recommendService.selrecommendbyid(id));
+        }else {
+            return new ReturnResults().error();
+        }
+    }
+    @PostMapping("/up")
+    public ReturnResults up(Recommend recommend) {
+        if (recommendService.up(recommend) == 1){
+            return new ReturnResults().success();
+        }else {
+            return new ReturnResults().error();
+        }
+    }
 
 }
