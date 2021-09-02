@@ -1,10 +1,11 @@
 document.write("<script language=javascript src='../../api/recommend/recommend.js'></script>");
 $(function () {
-    $("#add").click(function(){
-        console.log("aasadasd")
-    })
-    console.log(getrecommend())
     InitializedData()
+    $("#determine").click(function(){
+        add()
+    })
+
+
 });
 
 // 初始数据
@@ -39,4 +40,17 @@ function InitializedData() {
     setTimeout(function (){
         $("#prompt").remove()
     }, 3000);
+}
+
+
+
+function add(){
+    var formData = new FormData();
+    formData.append("file",$("#imgFile")[0].files[0]);
+    formData.append("title",$("#title").val()); 
+    formData.append("introduce",$("#introduce").val()); 
+    formData.append("address",$("#address").val()); 
+    formData.append("language",$("#language").val()); 
+
+    Addrec(formData)
 }

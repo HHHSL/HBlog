@@ -21,12 +21,13 @@
 </head>
 
 <body>
-    
+
     <script src="../js/tool/admin/adminnav.js"></script>
 
     <div class="admin_rec mt-3">
         <div class="rec_nr container shadow-lg p-4">
-            <button id="add" type="button" class="btn btn-outline-primary btn-sm m-1" data-bs-toggle="modal" data-bs-target="#staticBackdrop">新增</button>
+            <button id="add" type="button" class="btn btn-outline-primary btn-sm m-1" data-bs-toggle="modal"
+                data-bs-target="#staticBackdrop">新增</button>
             <button type="button" class="btn btn-outline-warning btn-sm m-1">导出</button>
             <div class="table-responsive">
                 <table class="table table-striped">
@@ -41,12 +42,12 @@
                         </tr>
                     </thead>
                     <tbody class="nr_tbody">
-        
+
                     </tbody>
                 </table>
             </div>
-            
-            
+
+
         </div>
     </div>
 
@@ -60,12 +61,30 @@
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
                 <div class="modal-body">
-                    
-                    
+                    <div class="mb-3">
+                        <label for="exampleFormControlInput1" class="form-label">文章标题</label>
+                        <input type="text" class="form-control" id="title">
+                    </div>
+                    <div class="mb-3">
+                        <label for="exampleFormControlTextarea1" class="form-label">文章介绍</label>
+                        <textarea class="form-control" id="introduce" rows="3"></textarea>
+                    </div>
+                    <div class="mb-3">
+                        <label for="exampleFormControlInput1" class="form-label">文章链接</label>
+                        <input type="text" class="form-control" id="address">
+                    </div>
+                    <div class="mb-3">
+                        <label for="exampleFormControlInput1" class="form-label">文章分类</label>
+                        <input type="text" class="form-control" id="language">
+                    </div>
+                    <div class="mb-3">
+                        <label for="formFile" class="form-label">上传图片</label>
+                        <input class="form-control" type="file" id="imgFile">
+                    </div>
                 </div>
                 <div class="modal-footer">
                     <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">取消</button>
-                    <button type="button" class="btn btn-primary" data-bs-dismiss="modal">确定</button>
+                    <button type="button" class="btn btn-primary" data-bs-dismiss="modal" id="determine">确定</button>
                 </div>
             </div>
         </div>

@@ -12,3 +12,22 @@ function getrecommend(){
   });
   return result
 }
+function getrecUrl(){
+   return getUrl()
+}
+function Addrec(data){
+  var result;
+  $.ajax({
+     async:false,
+     url: getUrl()+'/api/recommend/add',
+     type:'post',
+     cache: false, 
+        processData: false,
+        contentType: false,
+     data: data,
+     success:function (callback) {
+         result = callback
+     }
+ });
+ return result
+}
