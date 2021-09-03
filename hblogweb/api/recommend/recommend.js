@@ -30,6 +30,23 @@ function Addrec(data){
  });
  return result
 }
+// 修改文章
+function Uprec(data){
+    var result;
+    $.ajax({
+       async:false,
+       url: getUrl()+'/api/recommend/up',
+       type:'post',
+       cache: false, 
+       processData: false,
+       contentType: false,
+       data: data,
+       success:function (callback) {
+           result = callback
+       }
+   });
+   return result
+  }
 // 删除文章
 function delrec(data){
    var result;

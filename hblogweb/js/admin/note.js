@@ -1,4 +1,4 @@
-document.write("<script language=javascript src='../../api/recommend/recommend.js'></script>");
+document.write("<script language=javascript src='../../api/note/note.js'></script>");
 $(function () {
     InitializedData()
     $("#determine").click(function(){
@@ -15,8 +15,6 @@ $(function () {
     $("#add").click(function(){
         $(".Tips").html('新增')
     })
-
-
 
 });
 
