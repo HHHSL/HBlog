@@ -21,8 +21,8 @@ $(function () {
 // 初始数据
 function InitializedData() {
     $(".nr_tbody").empty()
-    if(getrecommend() != null && getrecommend().status == 200){
-        var rec = getrecommend()
+    if(getnote() != null && getnote().status == 200){
+        var rec = getnote()
         var code =  ''
         rec.data.forEach(ele => {
             code +="<tr><th scope='row'>"+ele.id+"</th>"+
