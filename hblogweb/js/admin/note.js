@@ -61,7 +61,7 @@ function add(){
     formData.append("introduce",$("#introduce").val()); 
     formData.append("address",$("#address").val()); 
     formData.append("language",$("#language").val()); 
-    Addrec(formData)
+    Addnote(formData)
 }
 
 //修改
@@ -72,14 +72,14 @@ function up(){
     formData.append("introduce",$("#introduce").val()); 
     formData.append("address",$("#address").val()); 
     formData.append("language",$("#language").val()); 
-    if(Uprec(formData).status == 200){
+    if(Upnote(formData).status == 200){
         InitializedData()
     }
 }
 
 // 删除
 function del(id){
-    if(delrec(id).status == 200){
+    if(delnote(id).status == 200){
         InitializedData()
     }
 }
@@ -87,7 +87,7 @@ function del(id){
 //查询 
 function selbyid(id){
     $(".Tips").html('修改')
-    var rec = selrecbyidc(id)
+    var rec = selnotebyidc(id)
     if(rec.status == 200){
         $("#id").val(rec.data.id)
         $("#title").val(rec.data.title)
