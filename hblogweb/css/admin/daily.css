@@ -1,0 +1,11 @@
+.admin_rec .rec_nr{
+    width: 70%;
+    border-radius: 15px;
+}
+.admin_rec .rec_nr .nr_tbody{
+    -webkit-white-space: nowrap;
+    -o-white-space: nowrap;
+    -ms-white-space: nowrap;
+    -moz-white-space: nowrap;
+    white-space: nowrap;
+}

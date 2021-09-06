@@ -32,9 +32,6 @@ public class FileUploadServiceImpl implements FileUploadService {
             }
             fos.close();
             is.close();
-            System.out.println("img/"+catalogue+"/");
-            System.out.println(filename);
-
             list.add("img/"+catalogue+"/");
             list.add(filename);
         } catch (IOException e) {
