@@ -1,17 +1,17 @@
 document.write("<script language=javascript src='../../api/recommend/recommend.js'></script>");
 $(function () {
+    // 初始化表格
     InitializedData()
+    // 新增或添加数据
     $("#determine").click(function(){
         var str = $(".Tips").html()
         if(str == '新增'){
-            console.log("新增")
             add()
+            empty()
         }else{
-            console.log("修改")
             up()
         }
     })
-
     $("#add").click(function(){
         $(".Tips").html('新增')
     })
@@ -57,13 +57,17 @@ function InitializedData() {
 
 //添加
 function add(){
-    var formData = new FormData();
-    formData.append("file",$("#imgFile")[0].files[0]);
-    formData.append("title",$("#title").val()); 
-    formData.append("introduce",$("#introduce").val()); 
-    formData.append("address",$("#address").val()); 
-    formData.append("language",$("#language").val()); 
-    Addrec(formData)
+    if($("#title").val() == "" || $("#introduce").val() =="" || $("#address").val() =="" || $("#language").val() ==""){
+        console.log("添加数据")
+    }else{
+        var formData = new FormData();
+        formData.append("file",$("#imgFile")[0].files[0]);
+        formData.append("title",$("#title").val()); 
+        formData.append("introduce",$("#introduce").val()); 
+        formData.append("address",$("#address").val()); 
+        formData.append("language",$("#language").val());
+        Addrec(formData)
+    }
 }
 
 //修改
@@ -99,4 +103,12 @@ function selbyid(id){
     }
         
     
+}
+
+// 清空数据
+function empty(){
+    $("#title").val("")
+    $("#introduce").val("")
+    $("#address").val("")
+    $("#language").val("")
 }
