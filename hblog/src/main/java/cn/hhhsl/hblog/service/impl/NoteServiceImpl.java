@@ -26,11 +26,11 @@ public class NoteServiceImpl implements NoteService {
 
     @Override
     public int addnote(MultipartFile file,Note note) {
-        List list = fileUploadService.addfile(file, "note");
-        if (list != null){
-            note.setPicture((String) list.get(0));
-            note.setPicturename((String) list.get(1));
-        }
+        //List list = fileUploadService.addfile(file, "note");
+//        if (list != null){
+//            note.setPicture((String) list.get(0));
+//            note.setPicturename((String) list.get(1));
+//        }
         return noteMapper.insert(note);
     }
 

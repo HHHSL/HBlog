@@ -27,12 +27,13 @@ public class RecommendServiceImpl implements RecommendService {
 
     @Override
     public int add(MultipartFile file,Recommend recommend) {
-        List list = fileUploadService.addfile(file, "recommend");
-        if (list != null){
-            recommend.setPicture((String) list.get(0));
-            recommend.setPicturename((String) list.get(1));
-        }
-        return recommendMapper.insert(recommend);
+        System.out.println(fileUploadService.saveImage(file));
+//        List list = fileUploadService.addfile(file, "recommend");
+//        if (list != null){
+//            recommend.setPicture((String) list.get(0));
+//            recommend.setPicturename((String) list.get(1));
+//        }
+        return 0;
     }
 
     @Override

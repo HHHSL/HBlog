@@ -6,5 +6,6 @@ import java.util.List;
 
 public interface FileUploadService {
 
-    List addfile(MultipartFile file, String catalogue);
+//    List addfile(MultipartFile file, String catalogue);
+    String saveImage(MultipartFile file);
 }
