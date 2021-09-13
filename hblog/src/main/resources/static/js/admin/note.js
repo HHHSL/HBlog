@@ -4,15 +4,14 @@ $(function () {
     $("#determine").click(function(){
         var str = $(".Tips").html()
         if(str == '新增'){
-            console.log("新增")
             add()
         }else{
-            console.log("修改")
             up()
         }
     })
 
     $("#add").click(function(){
+        empty()
         $(".Tips").html('新增')
     })
 
@@ -55,18 +54,25 @@ function InitializedData() {
 
 //添加
 function add(){
-    var formData = new FormData();
-    formData.append("file",$("#imgFile")[0].files[0]);
-    formData.append("title",$("#title").val()); 
-    formData.append("introduce",$("#introduce").val()); 
-    formData.append("address",$("#address").val()); 
-    formData.append("language",$("#language").val()); 
-    Addnote(formData)
+    if($("#title").val() == "" || $("#introduce").val() =="" || $("#address").val() =="" || $("#language").val() ==""){
+        console.log("添加数据")
+    }else{
+        var formData = new FormData();
+        formData.append("file",$("#imgFile")[0].files[0]);
+        formData.append("title",$("#title").val()); 
+        formData.append("introduce",$("#introduce").val()); 
+        formData.append("address",$("#address").val()); 
+        formData.append("language",$("#language").val());
+        if(Addnote(formData).status == 200){
+            InitializedData()
+        }
+    }
 }
 
 //修改
 function up(){
     var formData = new FormData();
+    formData.append("file",$("#imgFile")[0].files[0]);
     formData.append("id",$("#id").val());
     formData.append("title",$("#title").val()); 
     formData.append("introduce",$("#introduce").val()); 
@@ -95,6 +101,12 @@ function selbyid(id){
         $("#address").val(rec.data.address)
         $("#language").val(rec.data.language)
     }
-        
-    
+}
+// 清空数据
+function empty(){
+    console.log("sdsadsa")
+    $("#title").val("")
+    $("#introduce").val("")
+    $("#address").val("")
+    $("#language").val("")
 }

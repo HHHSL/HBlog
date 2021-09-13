@@ -23,7 +23,7 @@ public class Recommend {
     private String introduce;//介绍
     private String address;//文章地址
     private String language;//使用语言
-    private String picture;//图片地址
-    private String picturename;//图片名字
+    private String pictureaddress;//图片地址
+    private String time;//时间
 
 }

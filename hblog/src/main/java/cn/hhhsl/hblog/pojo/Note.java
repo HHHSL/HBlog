@@ -22,6 +22,6 @@ public class Note {
     private String introduce;//介绍
     private String address;//地址
     private String language;//语言
-    private String picture;//图片地址
-    private String picturename;//图片名字
+    private String pictureaddress;//图片地址
+    private String time;//时间
 }

@@ -13,58 +13,64 @@ function getrecommend() {
 }
 
 // 添加文章
-function Addrec(data){
-  var result;
-  $.ajax({
-     url: '/api/recommend/add',
-     type:'post',
-     cache: false, 
-     processData: false,
-     contentType: false,
-     data: data,
-     success:function (callback) {
-         result = callback
-     }
- });
- return result
+function Addrec(data) {
+    var result;
+    $.ajax({
+        async: false,
+        url: '/api/recommend/add',
+        type: 'post',
+        cache: false,
+        processData: false,
+        contentType: false,
+        data: data,
+        success: function (callback) {
+            result = callback
+            console.log(result)
+        }
+    });
+    console.log(result)
+    return result
 }
-// // 修改文章
-// function Uprec(data){
-//     var result;
-//     $.ajax({
-//        url: getUrl()+'/api/recommend/up',
-//        type:'post',
-//        cache: false, 
-//        processData: false,
-//        contentType: false,
-//        data: data,
-//        success:function (callback) {
-//            result = callback
-//        }
-//    });
-//    return result
-//   }
-// // 删除文章
-// function delrec(data){
-//    var result;
-//    $.ajax({
-//       url: getUrl()+'/api/recommend/del/'+data,
-//       type:'get',
-//       success:function (callback) {
-//           result = callback
-//       }
-//   });
-//   return result
-//  }
-// //  根据id获取文章
-//  function selrecbyidc(data){
-//    var result;
-//    $.ajax({
-//       url: getUrl()+'/api/recommend/sel/'+data,
-//       type:'get',
-//       success:function (callback) {
-//           result = callback
-//       }
-//   });
-//   return result
-//  }
+// 修改文章
+function Uprec(data) {
+    var result;
+    $.ajax({
+        async: false,
+        url: '/api/recommend/up',
+        type: 'post',
+        cache: false,
+        processData: false,
+        contentType: false,
+        data: data,
+        success: function (callback) {
+            result = callback
+        }
+    });
+    return result
+}
+// 删除文章
+function delrec(data) {
+    var result;
+    $.ajax({
+        async: false,
+        url: '/api/recommend/del/' + data,
+        type: 'get',
+        success: function (callback) {
+            result = callback
+        }
+    });
+    return result
+}
+//  根据id获取文章
+function selrecbyidc(data) {
+    var result;
+    $.ajax({
+        async: false,
+        url: '/api/recommend/sel/' + data,
+        type: 'get',
+        success: function (callback) {
+            result = callback
+        }
+    });
+    return result
+}

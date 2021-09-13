@@ -11,6 +11,8 @@ import org.springframework.stereotype.Service;
 import org.springframework.web.multipart.MultipartFile;
 
 
+import java.text.SimpleDateFormat;
+import java.util.Date;
 import java.util.List;
 @Service
 public class RecommendServiceImpl implements RecommendService {
@@ -27,13 +29,10 @@ public class RecommendServiceImpl implements RecommendService {
 
     @Override
     public int add(MultipartFile file,Recommend recommend) {
-        System.out.println(fileUploadService.saveImage(file));
-//        List list = fileUploadService.addfile(file, "recommend");
-//        if (list != null){
-//            recommend.setPicture((String) list.get(0));
-//            recommend.setPicturename((String) list.get(1));
-//        }
-        return 0;
+        String imgUrl = fileUploadService.saveImage(file);
+        recommend.setPictureaddress(imgUrl);
+        recommend.setTime(new SimpleDateFormat("yyyy-MM-dd").format(new Date()));
+        return recommendMapper.insert(recommend);
     }
 
     @Override
@@ -47,7 +46,10 @@ public class RecommendServiceImpl implements RecommendService {
     }
 
     @Override
-    public int up(Recommend recommend) {
+    public int up(MultipartFile file,Recommend recommend) {
+        String imgUrl = fileUploadService.saveImage(file);
+        recommend.setPictureaddress(imgUrl);
+        recommend.setTime(new SimpleDateFormat("yyyy-MM-dd").format(new Date()));
         return recommendMapper.updateById(recommend);
     }
 

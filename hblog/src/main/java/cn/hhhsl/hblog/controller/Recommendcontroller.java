@@ -50,8 +50,8 @@ public class Recommendcontroller {
         }
     }
     @PostMapping("/up")
-    public ReturnResults up(Recommend recommend) {
-        if (recommendService.up(recommend) == 1){
+    public ReturnResults up(@RequestParam("file") MultipartFile file,Recommend recommend) {
+        if (recommendService.up(file,recommend) == 1){
             return new ReturnResults().success();
         }else {
             return new ReturnResults().error();

@@ -29,9 +29,8 @@ public class DailyServiceImpl implements DailyService {
     @Override
     public int adddaily(MultipartFile file, Daily daily) {
         if (file != null){
-//            List list = fileUploadService.addfile(file, "daily");
-//            daily.setPicture((String) list.get(0));
-//            daily.setPicturename((String) list.get(1));
+            String s = fileUploadService.saveImage(file);
+
         }
         SimpleDateFormat simpleDateFormat = new SimpleDateFormat("yyyy-mm-dd");
         daily.setTime(simpleDateFormat.format(new Date()));

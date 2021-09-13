@@ -12,7 +12,7 @@ function InitializedData() {
             code +=  "<div class='col animate__animated animate__flipInY'>"+
             "<div class='card'>"+
             "<a href='"+ele.address+"'>"+
-            "<img src='"+ele.picture+'/'+ele.picturename+"' class='card-img-top'>"+
+            "<img src='"+ele.pictureaddress+"' class='card-img-top'>"+
             "<div class='card-body'>"+
             "<h5 class='card-title'>"+ele.title+"</h5>"+
             "<p class='card-text'>"+ele.introduce+"</p>"+

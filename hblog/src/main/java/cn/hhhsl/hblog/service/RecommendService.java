@@ -15,5 +15,5 @@ public interface RecommendService {
 
     Recommend selrecommendbyid(int id);
 
-    int up(Recommend recommend);
+    int up(MultipartFile file,Recommend recommend);
 }

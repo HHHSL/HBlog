@@ -8,8 +8,11 @@ import cn.hhhsl.hblog.service.NoteService;
 import com.baomidou.mybatisplus.core.conditions.query.QueryWrapper;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
+import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.multipart.MultipartFile;
 
+import java.text.SimpleDateFormat;
+import java.util.Date;
 import java.util.List;
 
 @Service
@@ -26,11 +29,9 @@ public class NoteServiceImpl implements NoteService {
 
     @Override
     public int addnote(MultipartFile file,Note note) {
-        //List list = fileUploadService.addfile(file, "note");
-//        if (list != null){
-//            note.setPicture((String) list.get(0));
-//            note.setPicturename((String) list.get(1));
-//        }
+        String imgUrl = fileUploadService.saveImage(file);
+        note.setPictureaddress(imgUrl);
+        note.setTime(new SimpleDateFormat("yyyy-MM-dd").format(new Date()));
         return noteMapper.insert(note);
     }
 
@@ -40,7 +41,10 @@ public class NoteServiceImpl implements NoteService {
     }
 
     @Override
-    public int up(Note note) {
+    public int up(MultipartFile file, Note note) {
+        String imgUrl = fileUploadService.saveImage(file);
+        note.setPictureaddress(imgUrl);
+        note.setTime(new SimpleDateFormat("yyyy-MM-dd").format(new Date()));
         return noteMapper.updateById(note);
     }
 

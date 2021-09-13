@@ -7,7 +7,7 @@ $(function () {
         rec.data.forEach(ele => {
             code +=  "<div class='col'>"+
             "<div class='card shadow'>"+
-            "<img src='"+ele.picture+'/'+ele.picturename+"' class='card-img-top'>"+
+            "<img src='"+ele.pictureaddress+"' class='card-img-top'>"+
             "<div class='card-body'>"+
             "<p class='card-text'>"+ele.title+"</p>"+
             "</div></div></div>"
@@ -15,7 +15,7 @@ $(function () {
     }else{
         code =  "<div class='col'>"+
         "<div class='card shadow'>"+
-        "<img src='img/null.jpg' class='card-img-top' style='height:100%;'>"+
+        "<img src='http://qzawadqtq.hn-bkt.clouddn.com/3dc176bdfccd49f385708af85bb890e8.jpg' class='card-img-top' style='height:100%;'>"+
         "</div></div>"
         var prompt = "<div id='prompt' class='text-center alert alert-danger alert-dismissible fade show position-absolute top-50 start-50 translate-middle' role='alert'>"+
         "<strong>Sorry</strong> 服务器出错,请联系管理员"+

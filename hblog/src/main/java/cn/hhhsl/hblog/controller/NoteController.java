@@ -39,8 +39,8 @@ public class NoteController {
     }
 
     @PostMapping("/up")
-    public ReturnResults up(Note note) {
-        if (noteService.up(note) == 1){
+    public ReturnResults up(@RequestParam("file") MultipartFile file,Note note) {
+        if (noteService.up(file,note) == 1){
             return new ReturnResults().success();
         }else {
             return new ReturnResults().error();
