@@ -19,10 +19,10 @@ import java.util.UUID;
 
 @Service
 public class FileUploadServiceImpl implements FileUploadService {
-    String endpoint = "oss-cn-beijing.aliyuncs.com";
-    String accessKeyId = "LTAI5tQtGvWQgenHtW2XXDLK";
-    String accessKeySecret = "HRQcDT1VVgw5e4qP5ROhgfD7R8IJJ1";
-    String bucketName = "hhhsl";
+    String endpoint = "**************";
+    String accessKeyId = "**************";
+    String accessKeySecret = "**************";;
+    String bucketName = "**************";;
     @Override
     public String saveImage(MultipartFile file,String type) {
         OSS ossClient = null;
