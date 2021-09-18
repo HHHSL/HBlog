@@ -5,9 +5,9 @@ $(function () {
         var rec = getdaily()
         rec.data.forEach(ele => {
             var imgcode = ''
-            if(ele.picturename != null){
-                ele.picturename.split(',').forEach(ela => {
-                    imgcode+= "<a href='"+ele.picture+'/'+ela+"'><img src='"+ele.picture+'/'+ela+"' class='ms-1 me-1'></a>"
+            if(ele.pictureaddress != null){
+                ele.pictureaddress.split(',').forEach(ela => {
+                    imgcode+= "<a href='"+ela+"' download=\"\"><img src='"+ela+"' class='ms-1 me-1'></a>"
                 });
             }else{
                 imgcode = ''

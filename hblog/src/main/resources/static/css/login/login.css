@@ -1,0 +1,21 @@
+.S_content .form{
+    width: 40%;
+    border-radius: 25px;
+    text-align: center;
+}
+.S_content .form input{
+    border-radius: 50px;
+    padding-left: 30px;
+}
+@media (max-width: 576px) {
+    .S_content .form{
+        width: 90%;
+    }
+}
+
+@media (min-width: 576px) and (max-width: 992px){
+    .S_content .form{
+        width: 60%;
+    }
+
+}

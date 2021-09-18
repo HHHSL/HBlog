@@ -25,10 +25,8 @@ function Addrec(data) {
         data: data,
         success: function (callback) {
             result = callback
-            console.log(result)
         }
     });
-    console.log(result)
     return result
 }
 // 修改文章

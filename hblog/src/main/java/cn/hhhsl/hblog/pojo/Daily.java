@@ -21,6 +21,5 @@ public class Daily {
     private String content; //内容
     private String time;//时间
     private String source;//来源
-    private String picture;//图片地址
-    private String picturename;//图片名字
+    private String pictureaddress;//图片地址
 }

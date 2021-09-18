@@ -40,7 +40,7 @@ function InitializedData() {
             "<td>null</td><td>"+
             "<button type='button' class='btn btn-outline-success btn-sm m-1'>修改</button>"+
             "<button type='button' class='btn btn-outline-danger btn-sm m-1'>删除</button></tr>"
-        
+
         var prompt = "<div id='prompt' class='text-center alert alert-danger alert-dismissible fade show position-absolute top-50 start-50 translate-middle' role='alert'>"+
         "<strong>Sorry</strong> 服务器出错,请联系管理员"+
         "<button type='button' class='btn-close' data-bs-dismiss='alert' aria-label='Close'></button></div>"
@@ -55,13 +55,13 @@ function InitializedData() {
 //添加
 function add(){
     if($("#title").val() == "" || $("#introduce").val() =="" || $("#address").val() =="" || $("#language").val() ==""){
-        console.log("添加数据")
+
     }else{
         var formData = new FormData();
         formData.append("file",$("#imgFile")[0].files[0]);
-        formData.append("title",$("#title").val()); 
-        formData.append("introduce",$("#introduce").val()); 
-        formData.append("address",$("#address").val()); 
+        formData.append("title",$("#title").val());
+        formData.append("introduce",$("#introduce").val());
+        formData.append("address",$("#address").val());
         formData.append("language",$("#language").val());
         if(Addnote(formData).status == 200){
             InitializedData()
@@ -74,10 +74,10 @@ function up(){
     var formData = new FormData();
     formData.append("file",$("#imgFile")[0].files[0]);
     formData.append("id",$("#id").val());
-    formData.append("title",$("#title").val()); 
-    formData.append("introduce",$("#introduce").val()); 
-    formData.append("address",$("#address").val()); 
-    formData.append("language",$("#language").val()); 
+    formData.append("title",$("#title").val());
+    formData.append("introduce",$("#introduce").val());
+    formData.append("address",$("#address").val());
+    formData.append("language",$("#language").val());
     if(Upnote(formData).status == 200){
         InitializedData()
     }
@@ -90,7 +90,7 @@ function del(id){
     }
 }
 
-//查询 
+//查询
 function selbyid(id){
     $(".Tips").html('修改')
     var rec = selnotebyidc(id)
@@ -104,7 +104,6 @@ function selbyid(id){
 }
 // 清空数据
 function empty(){
-    console.log("sdsadsa")
     $("#title").val("")
     $("#introduce").val("")
     $("#address").val("")

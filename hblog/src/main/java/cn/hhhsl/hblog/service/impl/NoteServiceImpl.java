@@ -29,7 +29,7 @@ public class NoteServiceImpl implements NoteService {
 
     @Override
     public int addnote(MultipartFile file,Note note) {
-        String imgUrl = fileUploadService.saveImage(file);
+        String imgUrl = fileUploadService.saveImage(file,"note");
         note.setPictureaddress(imgUrl);
         note.setTime(new SimpleDateFormat("yyyy-MM-dd").format(new Date()));
         return noteMapper.insert(note);
@@ -42,7 +42,7 @@ public class NoteServiceImpl implements NoteService {
 
     @Override
     public int up(MultipartFile file, Note note) {
-        String imgUrl = fileUploadService.saveImage(file);
+        String imgUrl = fileUploadService.saveImage(file,"note");
         note.setPictureaddress(imgUrl);
         note.setTime(new SimpleDateFormat("yyyy-MM-dd").format(new Date()));
         return noteMapper.updateById(note);

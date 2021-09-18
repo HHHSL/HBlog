@@ -29,7 +29,7 @@ public class RecommendServiceImpl implements RecommendService {
 
     @Override
     public int add(MultipartFile file,Recommend recommend) {
-        String imgUrl = fileUploadService.saveImage(file);
+        String imgUrl = fileUploadService.saveImage(file,"recommend");
         recommend.setPictureaddress(imgUrl);
         recommend.setTime(new SimpleDateFormat("yyyy-MM-dd").format(new Date()));
         return recommendMapper.insert(recommend);
@@ -47,7 +47,7 @@ public class RecommendServiceImpl implements RecommendService {
 
     @Override
     public int up(MultipartFile file,Recommend recommend) {
-        String imgUrl = fileUploadService.saveImage(file);
+        String imgUrl = fileUploadService.saveImage(file,"recommend");
         recommend.setPictureaddress(imgUrl);
         recommend.setTime(new SimpleDateFormat("yyyy-MM-dd").format(new Date()));
         return recommendMapper.updateById(recommend);

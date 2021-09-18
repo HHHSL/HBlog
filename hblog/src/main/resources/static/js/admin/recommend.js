@@ -59,7 +59,7 @@ function InitializedData() {
 //添加
 function add() {
     if ($("#title").val() == "" || $("#introduce").val() == "" || $("#address").val() == "" || $("#language").val() == "") {
-        console.log("添加数据")
+
     } else {
         var formData = new FormData();
         formData.append("file", $("#imgFile")[0].files[0]);
@@ -95,7 +95,7 @@ function del(id) {
     }
 }
 
-//查询 
+//查询
 function selbyid(id) {
     $(".Tips").html('修改')
     var rec = selrecbyidc(id)

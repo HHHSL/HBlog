@@ -2,6 +2,7 @@
 function getdaily(){
    var result;
    $.ajax({
+        async:false,
       url: '/api/daily/sel',
       type:'get',
       success:function (callback) {
@@ -18,7 +19,7 @@ function Adddaily(data){
        async:false,
        url: '/api/daily/add',
        type:'post',
-       cache: false, 
+       cache: false,
        processData: false,
        contentType: false,
        data: data,
@@ -48,7 +49,7 @@ function Updaily(data){
        async:false,
        url: '/api/daily/up',
        type:'post',
-       cache: false, 
+       cache: false,
        processData: false,
        contentType: false,
        data: data,

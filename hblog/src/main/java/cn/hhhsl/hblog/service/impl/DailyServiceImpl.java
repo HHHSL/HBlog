@@ -29,7 +29,7 @@ public class DailyServiceImpl implements DailyService {
     @Override
     public int adddaily(MultipartFile file, Daily daily) {
         if (file != null){
-            String s = fileUploadService.saveImage(file);
+            String s = fileUploadService.saveImage(file,"daily");
 
         }
         SimpleDateFormat simpleDateFormat = new SimpleDateFormat("yyyy-mm-dd");

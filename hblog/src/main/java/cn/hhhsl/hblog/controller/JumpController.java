@@ -2,6 +2,7 @@ package cn.hhhsl.hblog.controller;
 
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.CrossOrigin;
+import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 
 
@@ -9,7 +10,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 @RequestMapping("/")
 @CrossOrigin
 public class JumpController {
-//    前台
+    //    前台
     @RequestMapping("")
     public String index1(){return "index";}
     @RequestMapping("index")
@@ -20,9 +21,17 @@ public class JumpController {
     public String note(){return "note";}
     @RequestMapping("/daily")
     public String daily(){return "daily";}
-    @RequestMapping("/login")
-    public String login(){return "login";}
-//后台页面
+
+
+    @GetMapping("/404")
+    public String notFoundPage() {return "404";}
+    @GetMapping("/403")
+    public String accessError() {return "403";}
+    @GetMapping("/500")
+    public String internalError() {return "500";}
+    //后台页面
+    @RequestMapping("/signin")
+    public String login(){return "signin";}
     @RequestMapping("/admin")
     public String admin(){return "admin";}
     @RequestMapping("/admin/recommend")
